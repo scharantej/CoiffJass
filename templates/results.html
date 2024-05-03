@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Results</title>
+</head>
+<body>
+<h1>Results</h1>
+<p>The winning team is: {{ result.winning_team }}</p>
+<p>The individual scores are:</p>
+<ul>
+{% for score in result.scores %}
+<li>{{ score }}</li>
+{% endfor %}
+</ul>
+<a href="/new-game">Start a new game</a>
+</body>
+</html>
+
